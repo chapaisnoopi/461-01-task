@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+    <nav>
+        <a lang="uk" href="index.html">Повернутися на головну</a>
+    </nav>
+    <header>
+        <h1 lang="uk">Форма заявки:</h1>
+    </header>
+
+    <section>
+        <table>
+            <tr>
+                <td lang="uk">№ заяки</td>
+                <td lang="uk">Дата виїзду</td>
+                <td lang="uk">Дата прибуття</td>
+            </tr>
+            <tr>
+                <td lang="uk">1</td>
+                <td lang="uk">02.12.2019</td>
+                <td lang="uk">01.05.2019</td>
+            </tr>
+            <tr>
+                <td lang="uk">2</td>
+                <td lang="uk">02.02.2020</td>
+                <td lang="uk">06.08.2020</td>
+            </tr>
+             <tr>
+                <td lang="uk">3</td>
+                <td lang="uk">12.02.2020</td>
+                <td lang="uk">20.02.2020</td>
+            </tr>
+             <tr>
+                <td lang="uk">4</td>
+                <td lang="uk">28.02.2020</td>
+                <td lang="uk">25.02.2020</td>
+            </tr>
+        </table>        
+    </section>
+    <br>
+
+    <section>
+        <h3 lang="uk">Для розгляду заявки вам слід відповідсти на декілька запитань:</h3>
+    </section>
+    <main>
+        <form method="POST" action="https://formspree.io/moqvjjnw">
+            <label lang="uk">Прізвище:
+                <input lang="uk" type="text" placeholder="*обов'язкове поле" name="name" required>
+            </label>
+                <br>
+            <label lang="uk">Ім'я:
+                <input lang="uk" type="text" placeholder="*обов'язкове поле" name="surname" required>
+            </label>
+                <br>
+            <label lang="uk">По батькові:
+                <input lang="uk" type="text" name="father's name">
+            </label>
+                <br>
+
+            <label lang="uk">Вік:
+                <input lang="uk" type="text" placeholder="*обов'язкове поле" name="age" required>
+            </label>
+                <br>
+
+            <label lang="uk">Стать:</label>
+            <label>
+                <input lang="uk" type="radio" name="gender" value="male">Чоловік
+            </label>
+            <label>
+                <input lang="uk" type="radio" name="gender" value="female">Жінка
+            </label>
+            <label>
+                <input lang="uk" type="radio" name="gender" value="other">Інше
+            </label>
+                <br>
+
+            <label lang="uk">Номер заявки:</label>
+            <label>
+                <input type="radio" name="number" value="02.12.2019">1
+            </label>
+            <label>
+                <input type="radio" name="number" value="02.02.2020">2
+            </label>
+            <label>
+                <input type="radio" name="number" value="12.02.2020">3
+            </label>
+            <label>
+                <input type="radio" name="number" value="28.02.2020">4
+            </label>
+                <br>
+
+            <label lang="uk">Досвід роботи, роки:</label>
+            <label>
+                <input lang="uk" type="radio" name="experiencer" value="morethan15">Більше 15
+            </label>
+            <label>
+                <input lang="uk" type="radio" name="experiencer" value="morethan10">Більше 10
+            </label>
+            <label>
+                <input lang="uk" type="radio" name="experiencer" value="morethan05">Більше 5
+            </label>
+                <br>
+
+            <label lang="uk">Номер телефону:
+                <input lang="uk" type="text" placeholder="*обов'язкове поле" name="mobilephone" required>
+            </label>
+                <br>
+
+            <label>Email:
+                <input type="text" placeholder="Email" name="email">
+            </label>
+                <br>
+
+            <label lang="uk">Коментар:
+                <textarea name="comments">
+                </textarea>
+            </label>
+            <br>
+            <input lang="uk" type="submit" value="Відправити форму">
+            <br>
+
+            <h3 lang="uk">Додаткову інформацію ви зможете отримати після розгляду заявки:</h3>
+            <nav>
+                <a lang="uk" href="index.html">Повернутися на головну</a>
+            </nav>
+            <a lang="uk" href="https://www.facebook.com/lvivjobs/">Сторінка на Facebook</a>
+        </form>
+    </main>
+</body>
+</html>
